@@ -1,0 +1,46 @@
+#utilityContainer {
+  margin-top: 25px;
+  padding-top: 15px;
+  border-radius: 5px;
+  border: solid;
+  border-width: 1px;
+  padding-bottom: 15px;
+}
+
+#tagList {
+  padding: 3px;
+  border: solid;
+  border-width: 1px;
+  border-radius: 2px;
+}
+
+.photoNum {
+  padding: 3px;
+  border: solid;
+  border-width: 1px;
+  border-radius: 2px;
+}
+
+.photoPos {
+  padding: 3px;
+  border: solid;
+  border-width: 1px;
+  border-radius: 2px; 
+}
+
+.photoPos p, .photoNum p {
+  margin: 0px;
+}
+
+#imageContainer .item{
+  margin: 3px;
+}
+#imageContainer .item p{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#data {
+  display: none;
+}
