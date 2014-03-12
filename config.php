@@ -14,20 +14,20 @@ if (isset($_ENV["MODE"])) { // Check the heroku MODE and set db accordingly; def
 switch ($MODE) {
   case 'production':
     $dsn = "mysql:host=HOST;port=PORT;dbname=PRODUCTION_DB";
-    $user = "psproduser";
-    $pass = "9m4aJ2n6M96yL";
+    $user = "user";
+    $pass = "pass";
     break;
 
   case 'staging':
     $dsn = "mysql:host=HOST;port=PORT;dbname=STAGING_DB";
-    $user = "psproduser";
-    $pass = "9m4aJ2n6M96yL";
+    $user = "user";
+    $pass = "pass";
     break;
 
   case 'development':
     $dsn = "mysql:host=HOST;port=PORT;dbname=DEVELOPMENT_DB";
-    $user = "psproduser";
-    $pass = "9m4aJ2n6M96yL";
+    $user = "user";
+    $pass = "pass";
     break;
 }
 
