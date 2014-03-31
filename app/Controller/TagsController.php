@@ -87,8 +87,13 @@ class TagsController extends AppController {
 			);
 
 			// $options['limit'] = 1;
-
-			$tags = $this->Tag->find('all', $options) ? $this->Tag->find('all', $options) : array(array('Tag' => array('Message' => 'There are no tags to display')));
+			if ($this->Tag->find('all', $options)) {
+				$tags = $this->Tag->find('all', $options);
+			} else {
+				$tags = array(array('Tag' => array('Message' => 'There are no tags to display')));
+				$this->set('noResults', true);
+			}
+			// $tags = $this->Tag->find('all', $options) ? $this->Tag->find('all', $options) : array(array('Tag' => array('Message' => 'There are no tags to display')));
 
   		$this->set('tags', $tags);
 
