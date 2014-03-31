@@ -1,0 +1,834 @@
+2014-03-25 17:49:19 Error: [MissingActionException] Action TagsController::tagger() could not be found.
+Exception Attributes: array (
+  'controller' => 'TagsController',
+  'action' => 'tagger',
+)
+Request URL: /archvision-tagger/
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TagsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-25 17:54:06 Error: [PDOException] SQLSTATE[42000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]Incorrect syntax near ','.
+Request URL: /archvision-tagger/
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\Database\Sqlserver.php(761): DboSource->_execute('SELECT  [Tag].[...', Array, Array)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(424): Sqlserver->_execute('SELECT  [Tag].[...', Array)
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT  [Tag].[...', Array, Array)
+#4 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT  [Tag].[...', false)
+#5 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\Database\Sqlserver.php(606): DboSource->read(Object(Tag), Array, NULL)
+#6 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(2902): Sqlserver->read(Object(Tag), Array)
+#7 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#8 C:\wamp\www\archvision-tagger\app\Controller\TagsController.php(30): Model->find('all', Array)
+#9 [internal function]: TagsController->index()
+#10 C:\wamp\www\archvision-tagger\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TagsController), Array)
+#11 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#12 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TagsController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-03-25 17:58:17 Error: [MissingViewException] View file "C:\wamp\www\archvision-tagger\app\View\Tags\debug.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\archvision-tagger\\app\\View\\Tags\\debug.ctp',
+)
+Request URL: /archvision-tagger/tags/debug
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\View\View.php(463): View->_getViewFileName(NULL)
+#1 C:\wamp\www\archvision-tagger\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TagsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-26 13:56:28 Error: [MissingViewException] View file "C:\wamp\www\archvision-tagger\app\View\Tags\debug.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\archvision-tagger\\app\\View\\Tags\\debug.ctp',
+)
+Request URL: /archvision-tagger/tags/debug
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\View\View.php(463): View->_getViewFileName(NULL)
+#1 C:\wamp\www\archvision-tagger\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TagsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-26 13:56:49 Error: [MissingViewException] View file "C:\wamp\www\archvision-tagger\app\View\Tags\debug.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\archvision-tagger\\app\\View\\Tags\\debug.ctp',
+)
+Request URL: /archvision-tagger/tags/debug
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\View\View.php(463): View->_getViewFileName(NULL)
+#1 C:\wamp\www\archvision-tagger\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TagsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-26 13:58:42 Error: Fatal Error (1): Call to a member function schema() on a non-object in [C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php, line 3574]
+2014-03-26 13:58:42 Error: [FatalErrorException] Call to a member function schema() on a non-object
+Request URL: /archvision-tagger/
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\arc...', 3574)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\arc...', 3574, Array)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\arc...', 3574, Array)
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-26 14:08:38 Error: Fatal Error (1): Call to a member function schema() on a non-object in [C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php, line 3574]
+2014-03-26 14:08:38 Error: [FatalErrorException] Call to a member function schema() on a non-object
+Request URL: /archvision-tagger/
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\arc...', 3574)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\arc...', 3574, Array)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\arc...', 3574, Array)
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-26 14:19:03 Error: Fatal Error (4): syntax error, unexpected ')', expecting function (T_FUNCTION) in [C:\wamp\www\archvision-tagger\app\Model\Content.php, line 22]
+2014-03-26 14:19:03 Error: [FatalErrorException] syntax error, unexpected ')', expecting function (T_FUNCTION)
+Request URL: /archvision-tagger/
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\arc...', 22)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\arc...', 22, Array)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\arc...', 22, Array)
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-26 14:19:27 Error: Fatal Error (1): Call to a member function schema() on a non-object in [C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php, line 3574]
+2014-03-26 14:19:27 Error: [FatalErrorException] Call to a member function schema() on a non-object
+Request URL: /archvision-tagger/
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\arc...', 3574)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\arc...', 3574, Array)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\arc...', 3574, Array)
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-26 14:26:19 Error: Fatal Error (1): Call to a member function schema() on a non-object in [C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php, line 3574]
+2014-03-26 14:26:19 Error: [FatalErrorException] Call to a member function schema() on a non-object
+Request URL: /archvision-tagger/
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\arc...', 3574)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\arc...', 3574, Array)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\arc...', 3574, Array)
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-26 14:27:39 Error: Fatal Error (1): Call to a member function schema() on a non-object in [C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php, line 3574]
+2014-03-26 14:27:39 Error: [FatalErrorException] Call to a member function schema() on a non-object
+Request URL: /archvision-tagger/
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\arc...', 3574)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\arc...', 3574, Array)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\arc...', 3574, Array)
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-26 14:40:46 Error: Fatal Error (1): Call to a member function schema() on a non-object in [C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php, line 3574]
+2014-03-26 14:40:46 Error: [FatalErrorException] Call to a member function schema() on a non-object
+Request URL: /archvision-tagger/
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\arc...', 3574)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\arc...', 3574, Array)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\arc...', 3574, Array)
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-26 14:47:07 Error: Fatal Error (1): Call to a member function schema() on a non-object in [C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php, line 3574]
+2014-03-26 14:47:07 Error: [FatalErrorException] Call to a member function schema() on a non-object
+Request URL: /archvision-tagger/
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\arc...', 3574)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\arc...', 3574, Array)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\arc...', 3574, Array)
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-26 15:14:15 Error: [MissingControllerException] Controller class DebugController could not be found.
+Exception Attributes: array (
+  'class' => 'DebugController',
+  'plugin' => NULL,
+)
+Request URL: /archvision-tagger/debug
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-26 15:19:40 Error: [MissingViewException] View file "C:\wamp\www\archvision-tagger\app\View\Debugs\content.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\archvision-tagger\\app\\View\\Debugs\\content.ctp',
+)
+Request URL: /archvision-tagger/debugs/content
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\View\View.php(463): View->_getViewFileName(NULL)
+#1 C:\wamp\www\archvision-tagger\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DebugsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-26 15:20:13 Error: [MissingViewException] View file "C:\wamp\www\archvision-tagger\app\View\Debugs\tag.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\archvision-tagger\\app\\View\\Debugs\\tag.ctp',
+)
+Request URL: /archvision-tagger/debugs/tag
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\View\View.php(463): View->_getViewFileName(NULL)
+#1 C:\wamp\www\archvision-tagger\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DebugsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-26 15:52:44 Error: Fatal Error (64): Cannot redeclare class Content in [C:\wamp\www\archvision-tagger\app\Model\Thing.php, line 26]
+2014-03-26 15:52:44 Error: [FatalErrorException] Cannot redeclare class Content
+Request URL: /archvision-tagger/
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\wamp\www\arc...', 26)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\wamp\www\arc...', 26, Array)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'C:\wamp\www\arc...', 26, Array)
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-26 15:58:12 Error: [MissingViewException] View file "C:\wamp\www\archvision-tagger\app\View\Debugs\tag.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\archvision-tagger\\app\\View\\Debugs\\tag.ctp',
+)
+Request URL: /archvision-tagger/debugs/tag
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\View\View.php(463): View->_getViewFileName(NULL)
+#1 C:\wamp\www\archvision-tagger\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DebugsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-26 16:18:06 Error: [MissingViewException] View file "C:\wamp\www\archvision-tagger\app\View\Tags\debug.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\archvision-tagger\\app\\View\\Tags\\debug.ctp',
+)
+Request URL: /archvision-tagger/tags/debug
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\View\View.php(463): View->_getViewFileName(NULL)
+#1 C:\wamp\www\archvision-tagger\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TagsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-26 16:28:33 Error: Fatal Error (4): syntax error, unexpected ''limit'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\wamp\www\archvision-tagger\app\Controller\TagsController.php, line 41]
+2014-03-26 16:28:33 Error: [FatalErrorException] syntax error, unexpected ''limit'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /archvision-tagger/
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\arc...', 41)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\arc...', 41, Array)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\arc...', 41, Array)
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-26 16:29:07 Error: [MissingViewException] View file "C:\wamp\www\archvision-tagger\app\View\Tags\debug.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\archvision-tagger\\app\\View\\Tags\\debug.ctp',
+)
+Request URL: /archvision-tagger/tags/debug
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\View\View.php(463): View->_getViewFileName(NULL)
+#1 C:\wamp\www\archvision-tagger\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TagsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-26 16:29:36 Error: [PDOException] SQLSTATE[42000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]Incorrect syntax near ','.
+Request URL: /archvision-tagger/
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\Database\Sqlserver.php(761): DboSource->_execute('SELECT  TOP 1 [...', Array, Array)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(424): Sqlserver->_execute('SELECT  TOP 1 [...', Array)
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT  TOP 1 [...', Array, Array)
+#4 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT  TOP 1 [...', false)
+#5 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\Database\Sqlserver.php(606): DboSource->read(Object(Tag), Array, NULL)
+#6 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(2902): Sqlserver->read(Object(Tag), Array)
+#7 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#8 C:\wamp\www\archvision-tagger\app\Controller\TagsController.php(43): Model->find('all', Array)
+#9 [internal function]: TagsController->index()
+#10 C:\wamp\www\archvision-tagger\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TagsController), Array)
+#11 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#12 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TagsController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-03-26 16:31:17 Error: [PDOException] SQLSTATE[42S22]: [Microsoft][SQL Server Native Client 11.0][SQL Server]Invalid column name 'created_on'.
+Request URL: /archvision-tagger/
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\Database\Sqlserver.php(761): DboSource->_execute('SELECT  TOP 1 [...', Array, Array)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(424): Sqlserver->_execute('SELECT  TOP 1 [...', Array)
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT  TOP 1 [...', Array, Array)
+#4 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT  TOP 1 [...', false)
+#5 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\Database\Sqlserver.php(606): DboSource->read(Object(Tag), Array, NULL)
+#6 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(2902): Sqlserver->read(Object(Tag), Array)
+#7 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#8 C:\wamp\www\archvision-tagger\app\Controller\TagsController.php(43): Model->find('all', Array)
+#9 [internal function]: TagsController->index()
+#10 C:\wamp\www\archvision-tagger\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TagsController), Array)
+#11 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#12 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TagsController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-03-26 16:32:00 Error: [PDOException] SQLSTATE[42S22]: [Microsoft][SQL Server Native Client 11.0][SQL Server]Invalid column name 'created_an'.
+Request URL: /archvision-tagger/
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\Database\Sqlserver.php(761): DboSource->_execute('SELECT  TOP 1 [...', Array, Array)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(424): Sqlserver->_execute('SELECT  TOP 1 [...', Array)
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT  TOP 1 [...', Array, Array)
+#4 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT  TOP 1 [...', false)
+#5 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\Database\Sqlserver.php(606): DboSource->read(Object(Tag), Array, NULL)
+#6 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(2902): Sqlserver->read(Object(Tag), Array)
+#7 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#8 C:\wamp\www\archvision-tagger\app\Controller\TagsController.php(43): Model->find('all', Array)
+#9 [internal function]: TagsController->index()
+#10 C:\wamp\www\archvision-tagger\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TagsController), Array)
+#11 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#12 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TagsController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-03-26 16:43:47 Error: [PDOException] SQLSTATE[42S22]: [Microsoft][SQL Server Native Client 11.0][SQL Server]Invalid column name 'created_at'.
+Request URL: /archvision-tagger/
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\Database\Sqlserver.php(761): DboSource->_execute('SELECT  TOP 1 [...', Array, Array)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(424): Sqlserver->_execute('SELECT  TOP 1 [...', Array)
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT  TOP 1 [...', Array, Array)
+#4 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT  TOP 1 [...', false)
+#5 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\Database\Sqlserver.php(606): DboSource->read(Object(Tag), Array, NULL)
+#6 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(2902): Sqlserver->read(Object(Tag), Array)
+#7 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#8 C:\wamp\www\archvision-tagger\app\Controller\TagsController.php(52): Model->find('all', Array)
+#9 [internal function]: TagsController->index()
+#10 C:\wamp\www\archvision-tagger\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TagsController), Array)
+#11 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#12 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TagsController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-03-26 18:42:45 Error: [PDOException] SQLSTATE[42000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]Could not find stored procedure 'formatDates'.
+Request URL: /archvision-tagger/
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\Database\Sqlserver.php(764): PDO->exec('formatDates')
+#1 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(424): Sqlserver->_execute('formatDates', Array)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('formatDates', Array, Array)
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('formatDates', Array, Array)
+#4 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(800): DboSource->query('formatDates', Array, Object(Tag))
+#5 C:\wamp\www\archvision-tagger\app\Controller\TagsController.php(29): Model->__call('formatDates', Array)
+#6 C:\wamp\www\archvision-tagger\app\Controller\TagsController.php(29): Tag->formatDates(Array)
+#7 [internal function]: TagsController->index()
+#8 C:\wamp\www\archvision-tagger\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TagsController), Array)
+#9 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TagsController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-03-26 18:44:04 Error: [PDOException] SQLSTATE[42000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]The correlation name 'Tag' is specified multiple times in a FROM clause.
+Request URL: /archvision-tagger/
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\Database\Sqlserver.php(761): DboSource->_execute('SELECT  TOP 1 [...', Array, Array)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(424): Sqlserver->_execute('SELECT  TOP 1 [...', Array)
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT  TOP 1 [...', Array, Array)
+#4 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT  TOP 1 [...', false)
+#5 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\Database\Sqlserver.php(606): DboSource->read(Object(Tag), Array, NULL)
+#6 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(2902): Sqlserver->read(Object(Tag), Array)
+#7 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(2874): Model->_readDataSource('first', Array)
+#8 C:\wamp\www\archvision-tagger\app\Controller\TagsController.php(50): Model->find('first', Array)
+#9 [internal function]: TagsController->index()
+#10 C:\wamp\www\archvision-tagger\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TagsController), Array)
+#11 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#12 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TagsController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-03-26 19:07:33 Error: Fatal Error (4): syntax error, unexpected '$tags' (T_VARIABLE) in [C:\wamp\www\archvision-tagger\app\Controller\TagsController.php, line 60]
+2014-03-26 19:07:33 Error: [FatalErrorException] syntax error, unexpected '$tags' (T_VARIABLE)
+Request URL: /archvision-tagger/
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\arc...', 60)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\arc...', 60, Array)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\arc...', 60, Array)
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-26 19:07:52 Error: [PDOException] SQLSTATE[42S22]: [Microsoft][SQL Server Native Client 11.0][SQL Server]Invalid column name 'created_at'.
+Request URL: /archvision-tagger/
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\Database\Sqlserver.php(761): DboSource->_execute('SELECT  [Tag].[...', Array, Array)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(424): Sqlserver->_execute('SELECT  [Tag].[...', Array)
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT  [Tag].[...', Array, Array)
+#4 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT  [Tag].[...', false)
+#5 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\Database\Sqlserver.php(606): DboSource->read(Object(Tag), Array, NULL)
+#6 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(2902): Sqlserver->read(Object(Tag), Array)
+#7 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#8 C:\wamp\www\archvision-tagger\app\Controller\TagsController.php(60): Model->find('all', Array)
+#9 [internal function]: TagsController->index()
+#10 C:\wamp\www\archvision-tagger\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TagsController), Array)
+#11 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#12 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TagsController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-03-26 19:33:48 Error: [PDOException] SQLSTATE[42000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]Incorrect syntax near 'Tag__added_at'.
+Request URL: /archvision-tagger/
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\Database\Sqlserver.php(761): DboSource->_execute('SELECT  rtrim([...', Array, Array)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(424): Sqlserver->_execute('SELECT  rtrim([...', Array)
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT  rtrim([...', Array, Array)
+#4 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT  rtrim([...', false)
+#5 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\Database\Sqlserver.php(606): DboSource->read(Object(Tag), Array, NULL)
+#6 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(2902): Sqlserver->read(Object(Tag), Array)
+#7 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#8 C:\wamp\www\archvision-tagger\app\Controller\TagsController.php(59): Model->find('all', Array)
+#9 [internal function]: TagsController->index()
+#10 C:\wamp\www\archvision-tagger\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TagsController), Array)
+#11 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#12 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TagsController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-03-26 23:12:58 Error: Fatal Error (4): syntax error, unexpected '?>', expecting function (T_FUNCTION) in [C:\wamp\www\archvision-tagger\app\Controller\TagsController.php, line 97]
+2014-03-26 23:12:58 Error: [FatalErrorException] syntax error, unexpected '?>', expecting function (T_FUNCTION)
+Request URL: /archvision-tagger/
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\arc...', 97)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\arc...', 97, Array)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\arc...', 97, Array)
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-27 00:52:07 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\wamp\www\archvision-tagger\app\View\Tags\index.ctp, line 97]
+2014-03-27 00:52:07 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /archvision-tagger/
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\arc...', 97)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\arc...', 97, Array)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\arc...', 97, Array)
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-27 16:48:23 Error: [MissingControllerException] Controller class LabelsController could not be found.
+Exception Attributes: array (
+  'class' => 'LabelsController',
+  'plugin' => NULL,
+)
+Request URL: /archvision-tagger/labels/edit
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-27 16:57:04 Error: [MissingControllerException] Controller class LabelsController could not be found.
+Exception Attributes: array (
+  'class' => 'LabelsController',
+  'plugin' => NULL,
+)
+Request URL: /archvision-tagger/labels/edit
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-27 16:59:49 Error: [MissingControllerException] Controller class LabelsController could not be found.
+Exception Attributes: array (
+  'class' => 'LabelsController',
+  'plugin' => NULL,
+)
+Request URL: /archvision-tagger/labels/edit
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-27 17:00:14 Error: [MissingControllerException] Controller class LabelsController could not be found.
+Exception Attributes: array (
+  'class' => 'LabelsController',
+  'plugin' => NULL,
+)
+Request URL: /archvision-tagger/labels/edit
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-27 19:31:26 Error: [MissingControllerException] Controller class LabelsController could not be found.
+Exception Attributes: array (
+  'class' => 'LabelsController',
+  'plugin' => NULL,
+)
+Request URL: /archvision-tagger/labels/edit
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-27 19:36:04 Error: [MissingControllerException] Controller class LabelsController could not be found.
+Exception Attributes: array (
+  'class' => 'LabelsController',
+  'plugin' => NULL,
+)
+Request URL: /archvision-tagger/labels/edit
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-27 19:36:35 Error: Fatal Error (4): syntax error, unexpected 'array' (T_ARRAY), expecting ',' or ';' in [C:\wamp\www\archvision-tagger\app\Controller\LabelsController.php, line 7]
+2014-03-27 19:36:35 Error: [FatalErrorException] syntax error, unexpected 'array' (T_ARRAY), expecting ',' or ';'
+Request URL: /archvision-tagger/labels/edit
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\arc...', 7)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\arc...', 7, Array)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\arc...', 7, Array)
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-27 19:37:00 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /archvision-tagger/labels/edit
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\app\Controller\LabelsController.php(15): CakeRequest->onlyAllow('ajax')
+#1 [internal function]: LabelsController->edit()
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LabelsController), Array)
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LabelsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-03-27 19:37:35 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /archvision-tagger/labels/edit
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\app\Controller\LabelsController.php(15): CakeRequest->onlyAllow('ajax')
+#1 [internal function]: LabelsController->edit()
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LabelsController), Array)
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LabelsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-03-27 20:53:28 Error: [MissingViewException] View file "C:\wamp\www\archvision-tagger\app\View\Tags\debug.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\archvision-tagger\\app\\View\\Tags\\debug.ctp',
+)
+Request URL: /archvision-tagger/tags/debug
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\View\View.php(463): View->_getViewFileName(NULL)
+#1 C:\wamp\www\archvision-tagger\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TagsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-27 21:01:08 Error: Fatal Error (4): syntax error, unexpected end of file in [C:\wamp\www\archvision-tagger\app\View\Tags\index.ctp, line 146]
+2014-03-27 21:01:08 Error: [FatalErrorException] syntax error, unexpected end of file
+Request URL: /archvision-tagger/
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\arc...', 146)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\arc...', 146, Array)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\arc...', 146, Array)
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-27 21:04:26 Error: Fatal Error (4): syntax error, unexpected end of file in [C:\wamp\www\archvision-tagger\app\View\Tags\index.ctp, line 147]
+2014-03-27 21:04:26 Error: [FatalErrorException] syntax error, unexpected end of file
+Request URL: /archvision-tagger/
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\arc...', 147)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\arc...', 147, Array)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\arc...', 147, Array)
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-28 13:18:52 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /archvision-tagger/labels/edit
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\app\Controller\LabelsController.php(15): CakeRequest->onlyAllow('ajax')
+#1 [internal function]: LabelsController->edit()
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LabelsController), Array)
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LabelsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-03-28 13:21:11 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /archvision-tagger/labels/edit
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\app\Controller\LabelsController.php(15): CakeRequest->onlyAllow('ajax')
+#1 [internal function]: LabelsController->edit()
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LabelsController), Array)
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LabelsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-03-28 13:23:14 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /archvision-tagger/labels/edit
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\app\Controller\LabelsController.php(15): CakeRequest->onlyAllow('put')
+#1 [internal function]: LabelsController->edit()
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LabelsController), Array)
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LabelsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-03-28 13:30:53 Error: Fatal Error (4): syntax error, unexpected ':' in [C:\wamp\www\archvision-tagger\app\Controller\LabelsController.php, line 18]
+2014-03-28 13:30:53 Error: [FatalErrorException] syntax error, unexpected ':'
+Request URL: /archvision-tagger/labels/edit
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\arc...', 18)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\arc...', 18, Array)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\arc...', 18, Array)
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-28 14:35:23 Error: [MissingViewException] View file "C:\wamp\www\archvision-tagger\app\View\Labels\edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\archvision-tagger\\app\\View\\Labels\\edit.ctp',
+)
+Request URL: /archvision-tagger/labels/edit
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\View\View.php(463): View->_getViewFileName(NULL)
+#1 C:\wamp\www\archvision-tagger\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LabelsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-28 15:32:20 Error: Fatal Error (1): Call to a member function object() on a non-object in [C:\wamp\www\archvision-tagger\app\Controller\LabelsController.php, line 23]
+2014-03-28 15:32:20 Error: [FatalErrorException] Call to a member function object() on a non-object
+Request URL: /archvision-tagger/labels/edit
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\arc...', 23)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\arc...', 23, Array)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\arc...', 23, Array)
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-28 16:05:07 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /archvision-tagger/js/jquery-1.11.0.js
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-28 16:37:12 Error: [PDOException] SQLSTATE[42S22]: [Microsoft][SQL Server Native Client 11.0][SQL Server]Invalid column name 'Array'.
+Request URL: /archvision-tagger/labels/edit/4611
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\Database\Sqlserver.php(761): DboSource->_execute('SELECT  TOP 1 A...', Array, Array)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(424): Sqlserver->_execute('SELECT  TOP 1 A...', Array)
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT  TOP 1 A...', Array, Array)
+#4 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT  TOP 1 A...', false)
+#5 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\Database\Sqlserver.php(606): DboSource->read(Object(Label), Array, NULL)
+#6 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(2902): Sqlserver->read(Object(Label), Array)
+#7 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(2874): Model->_readDataSource('first', Array)
+#8 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(597): Model->find('first', Array)
+#9 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(800): DboSource->query('findById', Array, Object(Label))
+#10 C:\wamp\www\archvision-tagger\app\Controller\LabelsController.php(26): Model->__call('findById', Array)
+#11 C:\wamp\www\archvision-tagger\app\Controller\LabelsController.php(26): Label->findById('4611', Array)
+#12 [internal function]: LabelsController->edit('4611')
+#13 C:\wamp\www\archvision-tagger\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LabelsController), Array)
+#14 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#15 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LabelsController), Object(CakeRequest), Object(CakeResponse))
+#16 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2014-03-28 16:37:28 Error: [PDOException] SQLSTATE[42S22]: [Microsoft][SQL Server Native Client 11.0][SQL Server]Invalid column name 'Array'.
+Request URL: /archvision-tagger/labels/edit/169
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\Database\Sqlserver.php(761): DboSource->_execute('SELECT  TOP 1 A...', Array, Array)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(424): Sqlserver->_execute('SELECT  TOP 1 A...', Array)
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT  TOP 1 A...', Array, Array)
+#4 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT  TOP 1 A...', false)
+#5 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\Database\Sqlserver.php(606): DboSource->read(Object(Label), Array, NULL)
+#6 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(2902): Sqlserver->read(Object(Label), Array)
+#7 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(2874): Model->_readDataSource('first', Array)
+#8 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(597): Model->find('first', Array)
+#9 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(800): DboSource->query('findById', Array, Object(Label))
+#10 C:\wamp\www\archvision-tagger\app\Controller\LabelsController.php(26): Model->__call('findById', Array)
+#11 C:\wamp\www\archvision-tagger\app\Controller\LabelsController.php(26): Label->findById('169', Array)
+#12 [internal function]: LabelsController->edit('169')
+#13 C:\wamp\www\archvision-tagger\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LabelsController), Array)
+#14 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#15 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LabelsController), Object(CakeRequest), Object(CakeResponse))
+#16 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2014-03-28 17:14:44 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\wamp\www\archvision-tagger\app\View\Tags\index.ctp, line 117]
+2014-03-28 17:14:44 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /archvision-tagger/
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\arc...', 117)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\arc...', 117, Array)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\arc...', 117, Array)
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-28 17:16:39 Error: [PDOException] SQLSTATE[23000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert the value NULL into column 'value', table 'AWS_Content_TEST.dbo.content_tag'; column does not allow nulls. INSERT fails.
+Request URL: /archvision-tagger/labels/edit/169
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\Database\Sqlserver.php(764): PDO->exec('INSERT INTO [co...')
+#1 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(424): Sqlserver->_execute('INSERT INTO [co...', Array)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO [co...')
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\Database\Sqlserver.php(351): DboSource->create(Object(Label), Array, Array)
+#4 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(1832): Sqlserver->create(Object(Label), Array, Array)
+#5 C:\wamp\www\archvision-tagger\app\Controller\LabelsController.php(18): Model->save(Array)
+#6 [internal function]: LabelsController->edit('169')
+#7 C:\wamp\www\archvision-tagger\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LabelsController), Array)
+#8 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LabelsController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-03-28 17:20:59 Error: [PDOException] SQLSTATE[23000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert the value NULL into column 'value', table 'AWS_Content_TEST.dbo.content_tag'; column does not allow nulls. INSERT fails.
+Request URL: /archvision-tagger/labels/edit/4611
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\Database\Sqlserver.php(764): PDO->exec('INSERT INTO [co...')
+#1 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(424): Sqlserver->_execute('INSERT INTO [co...', Array)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO [co...')
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\Database\Sqlserver.php(351): DboSource->create(Object(Label), Array, Array)
+#4 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(1832): Sqlserver->create(Object(Label), Array, Array)
+#5 C:\wamp\www\archvision-tagger\app\Controller\LabelsController.php(18): Model->save(Array)
+#6 [internal function]: LabelsController->edit('4611')
+#7 C:\wamp\www\archvision-tagger\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LabelsController), Array)
+#8 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LabelsController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-03-28 17:24:56 Error: [PDOException] SQLSTATE[23000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert the value NULL into column 'value', table 'AWS_Content_TEST.dbo.content_tag'; column does not allow nulls. INSERT fails.
+Request URL: /archvision-tagger/labels/edit/169
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\Database\Sqlserver.php(764): PDO->exec('INSERT INTO [co...')
+#1 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(424): Sqlserver->_execute('INSERT INTO [co...', Array)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO [co...')
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\Database\Sqlserver.php(351): DboSource->create(Object(Label), Array, Array)
+#4 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(1832): Sqlserver->create(Object(Label), Array, Array)
+#5 C:\wamp\www\archvision-tagger\app\Controller\LabelsController.php(18): Model->save(Array)
+#6 [internal function]: LabelsController->edit('169')
+#7 C:\wamp\www\archvision-tagger\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LabelsController), Array)
+#8 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LabelsController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-03-28 17:26:49 Error: [PDOException] SQLSTATE[23000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert the value NULL into column 'value', table 'AWS_Content_TEST.dbo.content_tag'; column does not allow nulls. INSERT fails.
+Request URL: /archvision-tagger/labels/edit/4611
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\Database\Sqlserver.php(764): PDO->exec('INSERT INTO [co...')
+#1 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(424): Sqlserver->_execute('INSERT INTO [co...', Array)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO [co...')
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\Database\Sqlserver.php(351): DboSource->create(Object(Label), Array, Array)
+#4 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(1832): Sqlserver->create(Object(Label), Array, Array)
+#5 C:\wamp\www\archvision-tagger\app\Controller\LabelsController.php(18): Model->save(Array)
+#6 [internal function]: LabelsController->edit('4611')
+#7 C:\wamp\www\archvision-tagger\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LabelsController), Array)
+#8 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LabelsController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-03-28 17:27:21 Error: [PDOException] SQLSTATE[23000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert the value NULL into column 'value', table 'AWS_Content_TEST.dbo.content_tag'; column does not allow nulls. INSERT fails.
+Request URL: /archvision-tagger/labels/edit/4611
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\Database\Sqlserver.php(764): PDO->exec('INSERT INTO [co...')
+#1 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(424): Sqlserver->_execute('INSERT INTO [co...', Array)
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO [co...')
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Model\Datasource\Database\Sqlserver.php(351): DboSource->create(Object(Label), Array, Array)
+#4 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(1832): Sqlserver->create(Object(Label), Array, Array)
+#5 C:\wamp\www\archvision-tagger\app\Controller\LabelsController.php(18): Model->save(Array)
+#6 [internal function]: LabelsController->edit('4611')
+#7 C:\wamp\www\archvision-tagger\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(LabelsController), Array)
+#8 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(LabelsController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-03-28 17:44:32 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /archvision-tagger/js/jquery-1.11.0.js
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-28 19:04:04 Error: [MissingConnectionException] Database connection "Sqlserver" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Sqlserver',
+  'message' => 'Selected driver is not enabled',
+  'enabled' => false,
+)
+Request URL: /archvision-tagger/
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#1 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(3476): ConnectionManager::getDataSource('default')
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(1126): Model->setDataSource('default')
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(3498): Model->setSource('content_to_tag')
+#4 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(2902): Model->getDataSource()
+#5 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#6 C:\wamp\www\archvision-tagger\app\Controller\TagsController.php(91): Model->find('all', Array)
+#7 [internal function]: TagsController->index()
+#8 C:\wamp\www\archvision-tagger\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TagsController), Array)
+#9 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TagsController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-03-28 19:05:16 Error: [MissingConnectionException] Database connection "Sqlserver" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Sqlserver',
+  'message' => 'Selected driver is not enabled',
+  'enabled' => false,
+)
+Request URL: /archvision-tagger/
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#1 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(3476): ConnectionManager::getDataSource('default')
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(1126): Model->setDataSource('default')
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(3498): Model->setSource('content_to_tag')
+#4 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(2902): Model->getDataSource()
+#5 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#6 C:\wamp\www\archvision-tagger\app\Controller\TagsController.php(91): Model->find('all', Array)
+#7 [internal function]: TagsController->index()
+#8 C:\wamp\www\archvision-tagger\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TagsController), Array)
+#9 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TagsController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-03-28 19:09:29 Error: [MissingConnectionException] Database connection "Sqlserver" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Sqlserver',
+  'message' => 'Selected driver is not enabled',
+  'enabled' => false,
+)
+Request URL: /archvision-tagger/
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#1 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(3476): ConnectionManager::getDataSource('default')
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(1126): Model->setDataSource('default')
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(3498): Model->setSource('content_to_tag')
+#4 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(2902): Model->getDataSource()
+#5 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#6 C:\wamp\www\archvision-tagger\app\Controller\TagsController.php(91): Model->find('all', Array)
+#7 [internal function]: TagsController->index()
+#8 C:\wamp\www\archvision-tagger\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TagsController), Array)
+#9 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TagsController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-03-28 19:12:04 Error: [MissingConnectionException] Database connection "Sqlserver" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Sqlserver',
+  'message' => 'Selected driver is not enabled',
+  'enabled' => false,
+)
+Request URL: /archvision-tagger/
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#1 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(3476): ConnectionManager::getDataSource('default')
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(1126): Model->setDataSource('default')
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(3498): Model->setSource('content_to_tag')
+#4 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(2902): Model->getDataSource()
+#5 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#6 C:\wamp\www\archvision-tagger\app\Controller\TagsController.php(91): Model->find('all', Array)
+#7 [internal function]: TagsController->index()
+#8 C:\wamp\www\archvision-tagger\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TagsController), Array)
+#9 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TagsController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-03-28 19:12:36 Error: [MissingConnectionException] Database connection "Sqlserver" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Sqlserver',
+  'message' => 'Selected driver is not enabled',
+  'enabled' => false,
+)
+Request URL: /archvision-tagger/
+Stack Trace:
+#0 C:\wamp\www\archvision-tagger\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#1 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(3476): ConnectionManager::getDataSource('default')
+#2 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(1126): Model->setDataSource('default')
+#3 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(3498): Model->setSource('content_to_tag')
+#4 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(2902): Model->getDataSource()
+#5 C:\wamp\www\archvision-tagger\lib\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#6 C:\wamp\www\archvision-tagger\app\Controller\TagsController.php(91): Model->find('all', Array)
+#7 [internal function]: TagsController->index()
+#8 C:\wamp\www\archvision-tagger\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TagsController), Array)
+#9 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\archvision-tagger\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TagsController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\archvision-tagger\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
