@@ -20,7 +20,9 @@ function submitForm ($form){
 			console.log('Success!');
 			// Do schmancy stuff to update display now that item has been marked as Not Universal
 			console.log(response);
-			$('#' + response.id).text(response.object.Label.void);
+			$('.' + response.id).each(function() {
+				text(response.object.Label.void);
+			});
 		},
 		error: function (response){
 			console.log('Failure. =/');
