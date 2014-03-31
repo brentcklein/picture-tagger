@@ -55,11 +55,11 @@ class TagsController extends AppController {
 				$scope = $this->request->data['scopeFilter'];
 				switch ($scope) {
 					case 'Universal':
-						array_push($options['conditions'], 'Label.void IS NULL');
+						array_push($options['conditions'], '(Label.void IS FALSE OR Label.void IS NULL)');
 						break;
 
 					case 'Not Universal':
-						array_push($options['conditions'], 'Label.void IS NOT NULL');
+						array_push($options['conditions'], 'Label.void IS TRUE');
 						break;
 				}
 			}
