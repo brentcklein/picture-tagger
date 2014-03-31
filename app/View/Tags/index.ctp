@@ -124,7 +124,7 @@ echo $this->Form->create(
 			} ?>
 			<?php foreach ($table as $key => $field): ?>
 				<?php if ($key == 'void'): ?>
-					<td <?php echo "id='" . $tagId . "'"?>><?php echo trim($field); ?></td>
+					<td <?php echo "class='" . $tagId . "'"?>><?php echo trim($field); ?></td>
 				<?php else: ?>
 					<td><?php echo trim($field); ?></td>
 				<?php endif; ?>
