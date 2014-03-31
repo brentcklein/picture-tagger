@@ -21,7 +21,7 @@ function submitForm ($form){
 			// Do schmancy stuff to update display now that item has been marked as Not Universal
 			console.log(response);
 			$('.' + response.id).each(function() {
-				text(response.object.Label.void);
+				$(this).text(response.object.Label.void);
 			});
 		},
 		error: function (response){
